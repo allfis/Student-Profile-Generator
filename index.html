@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎓 Student Profile Generator</h1>
+      <p>Enter your information below.</p>
+
+      <div class="form">
+        <input type="text" id="name" placeholder="Full Name" />
+
+        <input type="email" id="email" placeholder="Email" />
+
+        <input type="text" id="department" placeholder="Department" />
+
+        <input type="text" id="university" placeholder="University" />
+
+        <textarea id="about" placeholder="About Yourself"></textarea>
+
+        <button onclick="generateProfile()">Generate Profile</button>
+      </div>
+    </div>
+
+    <div class="profile-card" id="card" style="display: none">
+      <h2 id="pName"></h2>
+
+      <p><strong>Email:</strong> <span id="pEmail"></span></p>
+
+      <p><strong>Department:</strong> <span id="pDepartment"></span></p>
+
+      <p><strong>University:</strong> <span id="pUniversity"></span></p>
+
+      <p id="pAbout"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
